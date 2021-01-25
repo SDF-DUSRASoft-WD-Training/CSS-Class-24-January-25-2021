@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+        <style>
+            h1, h2, h3, h4, h5, h6{
+                margin: 0;
+            }
+            .box{
+                width: 400px;
+                height: 150px;
+                position: relative;
+                padding: 30px;
+            }
+            .message{
+                padding: 20px;
+                background-color: red;
+                border: 3px solid black;
+                color: #fff;
+                position: relative;
+            }
+            .message::after {
+                content: "";
+                border-top: 20px solid red;
+                border-bottom: 20px solid transparent;
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;
+                /* transform: skew(18deg, 10deg); */
+                /* background-color: black; */
+                bottom: -36px;
+                left: 30px;
+                /* height: 40px; */
+                /* width: 30px; */
+                position: absolute;
+            }
+            .message::before {
+                content: "";
+                border-top: 21px solid black;
+                border-bottom: 21px solid transparent;
+                border-left: 21px solid transparent;
+                border-right: 21px solid transparent;
+                /* background-color: black; */
+                bottom: -42px;
+                left: 29px;
+                /* height: 40px; */
+                /* width: 30px; */
+                position: absolute;
+            }
+
+            .customer-profile {
+                padding-top: 35px;
+                padding-left: 28px;
+            }
+            .customer-img{
+                height: 50px;
+                width: 50px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                display: inline-block;
+                border-radius: 100%;
+                overflow: hidden;
+            }
+            .customer-title {
+                padding-left: 15px;
+                display: inline-block;
+                vertical-align: super;
+            }
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        
+        <div class="box">
+            <div class="message">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis laborum dolorem ipsum ducimus voluptate qui saepe quibusdam. Blanditiis laudantium pariatur consequatur nesciunt aliquam voluptates. Ex repudiandae alias laboriosam numquam ut.</p>
+            </div>
+
+            <div class="customer-profile">
+                <div class="customer-img" style="background-image: url(unnamed.jpg);">
+                </div>
+                <!--
+
+                    <div class="customer-img" style="background-image: url(reza-biazar-eSjmZW97cH8-unsplash.jpg);">
+                </div>
+
+                -->
+                <div class="customer-title">
+                    <h3>Shoron</h3>
+                    <h5>CEO</h5>
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+</html>
